@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>itexamportal | IT Study Materials</title>
+  <link rel="stylesheet" href="/student/css/dashboard.css">
+  <link rel="stylesheet" href="/student/css/materials.css">
+  <script src="/student/js/materials.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/student/dashboard.html">itexamportal</a>
+    <a class="back-button" href="/student/dashboard.html">Dashboard</a>
+  </header>
+
+  <main class="materials-container">
+    <section class="page-heading">
+      <p class="eyebrow">MAHARASHTRA HSC · CLASS 12</p>
+      <h1>Information Technology</h1>
+      <p>Study Materials and Chapter-wise Learning Resources</p>
+    </section>
+
+    <section class="filter-panel">
+      <label for="chapterFilter">Select chapter</label>
+      <select id="chapterFilter">
+        <option value="all">All chapters</option>
+      </select>
+    </section>
+
+    <section id="materialsList" class="materials-list" aria-live="polite">
+      <p class="loading">Loading study materials...</p>
+    </section>
+
+    <footer>
+      <p>© 2026 itexamportal</p>
+      <p>Independent educational practice portal.</p>
+    </footer>
+  </main>
+</body>
+</html>

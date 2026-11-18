@@ -1,0 +1,268 @@
+﻿:root {
+  --paper: #fffefa;
+  --background: #f5f1e8;
+  --ink: #242424;
+  --muted: #66645f;
+  --line: #c9c2b5;
+  --soft: #eee9df;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: "Times New Roman", Georgia, serif;
+  min-height: 100vh;
+}
+
+.topbar {
+  min-height: 70px;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+  padding: 15px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: .3px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.logout-button:hover {
+  background: var(--soft);
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 32px auto;
+}
+
+.welcome-panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--ink);
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.eyebrow {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: clamp(27px, 4vw, 36px);
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.subtitle strong {
+  color: var(--ink);
+}
+
+.candidate-card {
+  min-width: 215px;
+  padding: 19px;
+  border: 1px solid var(--ink);
+  background: #faf8f2;
+}
+
+.candidate-card span,
+.candidate-card strong {
+  display: block;
+}
+
+.candidate-card span {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.candidate-card strong {
+  font-size: 23px;
+  overflow-wrap: anywhere;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0 18px;
+}
+
+.section-heading h2,
+.exam-info h2 {
+  font-size: 24px;
+}
+
+.status-pill {
+  border: 1px solid #777;
+  padding: 7px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 25px;
+  color: var(--ink);
+  text-decoration: none;
+  min-height: 190px;
+}
+
+.feature-card:hover {
+  border-color: var(--ink);
+  background: #faf8f2;
+}
+
+.number {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  border: 1px solid var(--line);
+  padding: 6px 10px;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 21px;
+  margin-bottom: 9px;
+}
+
+.feature-card p {
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 17px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.exam-info {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  margin-top: 25px;
+  padding: 27px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.info-grid div {
+  border: 1px solid var(--line);
+  padding: 16px;
+}
+
+.info-grid strong,
+.info-grid span {
+  display: block;
+}
+
+.info-grid strong {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.info-grid span {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 18px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  padding: 30px 0 15px;
+}
+
+@media(max-width: 700px) {
+  .topbar {
+    padding: 14px 5%;
+  }
+
+  .container {
+    width: 92%;
+    margin-top: 20px;
+  }
+
+  .welcome-panel {
+    padding: 22px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .candidate-card {
+    min-width: 0;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

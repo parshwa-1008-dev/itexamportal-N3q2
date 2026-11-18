@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>itexamportal | IT Practice Questions</title>
+  <link rel="stylesheet" href="/student/css/dashboard.css">
+  <link rel="stylesheet" href="/student/css/practice.css">
+  <script src="/student/js/practice.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/student/dashboard.html">itexamportal</a>
+    <a class="back-button" href="/student/dashboard.html">Dashboard</a>
+  </header>
+
+  <main class="practice-container">
+    <section class="practice-heading">
+      <p class="eyebrow">MAHARASHTRA HSC · CLASS 12</p>
+      <h1>Information Technology Practice</h1>
+      <p>Practise topic-wise multiple-choice questions and review explanations.</p>
+    </section>
+
+    <section class="practice-panel">
+      <label for="chapterFilter">Choose a chapter</label>
+      <select id="chapterFilter">
+        <option value="all">All available chapters</option>
+      </select>
+
+      <div id="progress" class="progress">Loading questions...</div>
+
+      <div id="questionArea" hidden>
+        <p id="chapterName" class="chapter-label"></p>
+        <h2 id="questionText"></h2>
+        <div id="options" class="options"></div>
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+        <button id="checkButton" class="action-button" disabled>
+          Check Answer
+        </button>
+        <button id="nextButton" class="action-button" hidden>
+          Next Question
+        </button>
+      </div>
+
+      <div id="emptyState" class="empty-state" hidden>
+        No practice questions have been published yet.
+        Please check again later.
+      </div>
+
+      <div id="errorState" class="empty-state" hidden></div>
+
+      <div id="scoreArea" class="score-area" hidden>
+        <h2>Practice Completed</h2>
+        <p id="scoreText"></p>
+        <button id="restartButton" class="action-button">
+          Practise Again
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 itexamportal</p>
+      <p>Independent educational practice portal.</p>
+    </footer>
+  </main>
+</body>
+</html>

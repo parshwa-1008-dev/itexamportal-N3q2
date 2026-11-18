@@ -1,0 +1,40 @@
+﻿node_modules/
+.env
+.env.*
+!.env.example
+
+database/*.db
+database/*.sqlite
+database/*.db-shm
+database/*.db-wal
+
+*.sqlite
+*.sqlite3
+
+backups/
+uploads/
+storage/
+
+.DS_Store
+Thumbs.db
+npm-debug.log*
+
+# Local backup files
+*.bak
+*.backup
+*.bak.*
+*.log
+
+# SQLite temporary files
+*.db-shm
+*.db-wal
+
+# Exclude old backup copies
+*backup*
+*.bak
+*.bak.*
+
+
+# Local administrator provisioning scripts
+scripts/create-admin.js
+scripts/create-admin-secure.js

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>itexamportal | Student Dashboard</title>
+  <link rel="stylesheet" href="/student/css/dashboard.css">
+  <script src="/student/js/dashboard.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/student/dashboard.html">itexamportal</a>
+    <button id="logoutButton" class="logout-button" type="button">Logout</button>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome-panel">
+      <div>
+        <p class="eyebrow">STUDENT PORTAL · ACADEMIC YEAR 2026–27</p>
+        <h1>Welcome, <span id="studentName">Student</span></h1>
+        <p class="subtitle">
+          Maharashtra HSC Class 12
+          <strong>Information Technology</strong>
+          learning and examination portal.
+        </p>
+      </div>
+
+      <div class="candidate-card">
+        <span>YOUR PERMANENT CANDIDATE ID</span>
+        <strong id="candidateNo">Loading...</strong>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div>
+        <p class="eyebrow">STUDENT SERVICES</p>
+        <h2>Your Learning Dashboard</h2>
+      </div>
+      <span class="status-pill">Account Active</span>
+    </section>
+
+    <section class="dashboard-grid">
+
+      <a class="feature-card" href="/student/materials.html">
+        <span class="number">01</span>
+        <h3>Study Materials</h3>
+        <p>Chapter notes, study resources and downloadable PDFs.</p>
+        <span class="card-link">Open Study Materials →</span>
+      </a>
+
+      <a class="feature-card" href="/student/practice.html">
+        <span class="number">02</span>
+        <h3>Practice Questions</h3>
+        <p>Topic-wise Information Technology practice and revision.</p>
+        <span class="card-link">Start Practice →</span>
+      </a>
+
+      <a class="feature-card" href="/student/exams.html">
+        <span class="number">03</span>
+        <h3>Sunday Mock Examination</h3>
+        <p>80-mark practice paper with a duration of 2 hours 30 minutes.</p>
+        <span class="card-link">Examination Section →</span>
+      </a>
+
+      <a class="feature-card" href="/student/results.html">
+        <span class="number">04</span>
+        <h3>Results & Answer Keys</h3>
+        <p>Check examination results and available answer-key PDFs.</p>
+        <span class="card-link">View Results →</span>
+      </a>
+
+    </section>
+
+    <section class="exam-info">
+      <p class="eyebrow">MOCK EXAMINATION DETAILS</p>
+      <h2>Information Technology · Class 12</h2>
+
+      <div class="info-grid">
+        <div><strong>80</strong><span>Total Marks</span></div>
+        <div><strong>2h 30m</strong><span>Duration</span></div>
+        <div><strong>Sunday</strong><span>Exam Day</span></div>
+        <div><strong>12 Hours</strong><span>Result Release After Submission*</span></div>
+      </div>
+
+      <p class="note">
+        *Results are released after the 12-hour waiting period and completion
+        of any required manual evaluation.
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 itexamportal</p>
+      <p>Independent educational practice portal. Not affiliated with the Maharashtra State Board.</p>
+    </footer>
+
+  </main>
+</body>
+</html>

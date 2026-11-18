@@ -1,0 +1,120 @@
+﻿.materials-container {
+  width: min(1050px, 90%);
+  margin: 35px auto;
+}
+
+.page-heading {
+  background: #fffefa;
+  border: 1px solid #c9c2b5;
+  border-top: 4px solid #242424;
+  padding: 30px;
+}
+
+.page-heading h1 {
+  font-size: clamp(26px, 4vw, 36px);
+  margin-bottom: 10px;
+}
+
+.page-heading p:last-child {
+  color: #66645f;
+  line-height: 1.6;
+}
+
+.back-button {
+  color: #242424;
+  border: 1px solid #242424;
+  padding: 9px 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.filter-panel {
+  margin: 22px 0;
+  background: #fffefa;
+  border: 1px solid #c9c2b5;
+  padding: 18px;
+}
+
+.filter-panel label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.filter-panel select {
+  width: 100%;
+  max-width: 420px;
+  padding: 11px;
+  background: white;
+  border: 1px solid #aaa;
+  font: inherit;
+}
+
+.materials-list {
+  display: grid;
+  gap: 15px;
+}
+
+.material-card {
+  background: #fffefa;
+  border: 1px solid #c9c2b5;
+  padding: 23px;
+}
+
+.material-card h2 {
+  font-size: 21px;
+  margin: 10px 0;
+}
+
+.material-card p {
+  color: #66645f;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.material-tag {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+.material-chapter {
+  font-size: 13px;
+  color: #555;
+}
+
+.material-content {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd5c8;
+}
+
+.material-file {
+  display: inline-block;
+  margin-top: 15px;
+  color: #222;
+  font-weight: bold;
+}
+
+.empty-state,
+.loading,
+.error-state {
+  padding: 28px;
+  background: #fffefa;
+  border: 1px solid #c9c2b5;
+  line-height: 1.7;
+}
+
+@media(max-width: 600px) {
+  .materials-container {
+    width: 92%;
+    margin-top: 20px;
+  }
+
+  .page-heading {
+    padding: 22px;
+  }
+}

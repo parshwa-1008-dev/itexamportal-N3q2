@@ -1,0 +1,180 @@
+﻿* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f3f5f9;
+  color: #17233d;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+header {
+  height: 76px;
+  padding: 12px 7%;
+  background: #101b35;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 9px;
+  background: #d8ad59;
+  color: #101b35;
+  font-size: 23px;
+}
+
+.brand small {
+  display: block;
+  color: #d8ad59;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.portal {
+  font-size: 12px;
+  color: #d9dfeb;
+}
+
+main {
+  min-height: calc(100vh - 135px);
+  display: grid;
+  place-items: center;
+  padding: 35px 18px;
+}
+
+.login-card {
+  width: min(440px, 100%);
+  padding: 38px;
+  background: white;
+  border: 1px solid #e7eaf0;
+  border-radius: 15px;
+  box-shadow: 0 15px 45px #17233d12;
+}
+
+.eyebrow {
+  color: #a67b2e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 14px 0 8px;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: #778096;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+label {
+  display: block;
+  margin: 17px 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce1ea;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #b48b42;
+  box-shadow: 0 0 0 3px #d8ad5920;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: 0;
+  border-radius: 7px;
+  background: #101b35;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+#message {
+  min-height: 20px;
+  color: #b42318;
+  font-size: 13px;
+}
+
+.bottom {
+  margin-top: 22px;
+  padding-top: 19px;
+  border-top: 1px solid #edf0f4;
+  text-align: center;
+  color: #778096;
+  font-size: 13px;
+}
+
+.bottom a {
+  color: #a67b2e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.success-icon {
+  margin-top: 25px;
+  color: #168343;
+  font-size: 35px;
+}
+
+.candidate {
+  padding: 15px;
+  background: #fffaf0;
+  border: 1px dashed #b48b42;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+}
+
+.note {
+  color: #778096;
+  font-size: 13px;
+}
+
+footer {
+  padding: 18px;
+  color: #858da0;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media(max-width:600px) {
+  .portal { display: none; }
+  .login-card { padding: 26px; }
+}

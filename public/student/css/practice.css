@@ -1,0 +1,133 @@
+﻿.practice-container {
+  width: min(850px, 92%);
+  margin: 32px auto;
+}
+
+.practice-heading,
+.practice-panel {
+  background: #fffefa;
+  border: 1px solid #c9c2b5;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+.practice-heading {
+  border-top: 4px solid #242424;
+}
+
+.practice-heading h1 {
+  font-size: clamp(25px, 4vw, 34px);
+  margin-bottom: 10px;
+}
+
+.practice-heading p:last-child {
+  color: #66645f;
+  line-height: 1.6;
+}
+
+.back-button {
+  color: #242424;
+  border: 1px solid #242424;
+  padding: 9px 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.practice-panel label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.practice-panel select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  background: white;
+  font: inherit;
+}
+
+.progress {
+  margin: 22px 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #ddd5c8;
+  color: #66645f;
+  font-size: 14px;
+}
+
+.chapter-label {
+  color: #66645f;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+#questionText {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  gap: 11px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #c9c2b5;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.option:has(input:checked) {
+  border: 2px solid #333;
+  background: #f3f0e8;
+  padding: 14px;
+}
+
+.option input {
+  margin-top: 4px;
+}
+
+.feedback {
+  margin-top: 18px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.action-button {
+  margin-top: 18px;
+  padding: 12px 21px;
+  border: 1px solid #242424;
+  background: #242424;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+.action-button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.empty-state,
+.score-area {
+  margin-top: 20px;
+  padding: 23px;
+  border: 1px solid #c9c2b5;
+  line-height: 1.7;
+}
+
+.score-area h2 {
+  margin-bottom: 10px;
+}
+
+@media(max-width: 600px) {
+  .practice-heading,
+  .practice-panel {
+    padding: 20px;
+  }
+}

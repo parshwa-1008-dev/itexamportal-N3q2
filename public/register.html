@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b35">
+  <title>itexamportal | Student Registration</title>
+  <link rel="stylesheet" href="/css/register.css">
+  <script src="/js/register.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark">T</span>
+      <span>itexamportal</span>
+    </a>
+    <span class="portal-label">HSC CLASS 12 · INFORMATION TECHNOLOGY</span>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <div class="eyebrow">INDEPENDENT PRACTICE PORTAL</div>
+      <h1>Start your IT preparation with confidence.</h1>
+      <p>Create your student account to access Sunday mock examinations, IT study material, practice questions and results.</p>
+      <div class="feature">
+        <span>01</span>
+        <div><strong>Unique candidate number</strong><small>Automatically assigned during registration.</small></div>
+      </div>
+      <div class="feature">
+        <span>02</span>
+        <div><strong>Sunday mock examinations</strong><small>80 marks · 2 hours 30 minutes.</small></div>
+      </div>
+      <div class="feature">
+        <span>03</span>
+        <div><strong>IT learning resources</strong><small>Access study material throughout the week.</small></div>
+      </div>
+    </section>
+
+    <section class="register-card">
+      <div class="card-heading">
+        <div class="eyebrow">STUDENT ENROLMENT</div>
+        <h2>Create your account</h2>
+        <p>Enter your details to register on itexamportal.</p>
+      </div>
+
+      <form id="registerForm">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" minlength="2" maxlength="60" placeholder="Enter your full name" autocomplete="name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+        <label for="password">Create password</label>
+        <input id="password" name="password" type="password" minlength="12" maxlength="72" placeholder="At least 12 characters" autocomplete="new-password" required>
+        <small class="hint">Use at least 12 characters. Keep your password private.</small>
+
+        <label for="confirmPassword">Confirm password</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" minlength="12" maxlength="72" placeholder="Enter your password again" autocomplete="new-password" required>
+
+        <button id="submitButton" type="submit">Create student account <span>→</span></button>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </form>
+
+      <div id="successPanel" class="success-panel" hidden>
+        <div class="success-icon">✓</div>
+        <h3>Registration successful</h3>
+        <p>Your candidate number is:</p>
+        <strong id="candidateNumber" class="candidate-number"></strong>
+        <p class="save-note">Keep this number safe for your records.</p>
+        <a class="login-link" href="/login.html">Continue to login →</a>
+      </div>
+
+      <div class="card-footer">Already registered? <a href="/login.html">Log in</a></div>
+    </section>
+  </main>
+
+  <footer>© 2026 itexamportal · </footer>
+</body>
+</html>
+
+
+
+
+

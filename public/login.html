@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>itexamportal | Student Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+  <script src="/js/login.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/register.html">
+      <span class="logo">T</span>
+      <span>itexamportal</span>
+    </a>
+    <span class="portal">HSC CLASS 12 · INFORMATION TECHNOLOGY</span>
+  </header>
+
+  <main>
+    <section class="login-card">
+      <div class="eyebrow">STUDENT PORTAL</div>
+      <h1>Welcome back.</h1>
+      <p class="subtitle">Log in to continue your Information Technology preparation.</p>
+
+      <form id="loginForm">
+        <label for="email">Email address</label>
+        <input id="email" type="email" autocomplete="username"
+          placeholder="Enter your registered email" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="current-password"
+          placeholder="Enter your password" required>
+
+        <button id="loginButton" type="submit">Log in →</button>
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+
+      <section id="successPanel" hidden>
+        <div class="success-icon">✓</div>
+        <h2>Login successful</h2>
+        <p>Welcome, <strong id="studentName"></strong>.</p>
+        <p>Your candidate number:</p>
+        <div id="candidateNo" class="candidate"></div>
+        <p class="note">Your student login session is active.</p>
+      </section>
+
+      <div class="bottom">
+        New student? <a href="/register.html">Create an account</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 itexamportal · </footer>
+</body>
+</html>
+
+
+
+
+
